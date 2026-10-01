@@ -9,7 +9,7 @@ export default function VehicleDetail() {
   if (!vehicle) return <Navigate to="/vehiculos" replace />;
 
   const waText = `Hola, me interesa el ${vehicle.marca} ${vehicle.modelo} ${vehicle.year} (US$ ${vehicle.precio.toLocaleString("es-AR")})`;
-  const waHref = `https://wa.me/5491100000000?text=${encodeURIComponent(waText)}`;
+  const waHref = `https://wa.me/5491164027497?text=${encodeURIComponent(waText)}`;
 
   const ficha = [
     ["Precio", `US$ ${vehicle.precio.toLocaleString("es-AR")}`],

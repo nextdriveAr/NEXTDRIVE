@@ -1,5 +1,5 @@
 export default function WhatsAppFloat({ text = "Hola, quiero hacer una consulta" }) {
-  const href = `https://wa.me/5491100000000?text=${encodeURIComponent(text)}`;
+  const href = `https://wa.me/5491164027497?text=${encodeURIComponent(text)}`;
   return (
     <a
       href={href}

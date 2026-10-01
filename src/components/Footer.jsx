@@ -27,18 +27,23 @@ export default function Footer() {
             <p className="text-sm text-mist mb-4">Contacto</p>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="https://wa.me/5491100000000" target="_blank" rel="noreferrer" className="hover:text-mist">
+                <a href="https://wa.me/5491164027497" target="_blank" rel="noreferrer" className="hover:text-mist">
                   WhatsApp
                 </a>
               </li>
               <li>
-                <a href="https://instagram.com/nextdrive" target="_blank" rel="noreferrer" className="hover:text-mist">
+                <a href="https://instagram.com/nextdrive_arg" target="_blank" rel="noreferrer" className="hover:text-mist">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="mailto:hola@nextdrive.com.ar" className="hover:text-mist">
-                  hola@nextdrive.com.ar
+                <a href="https://tiktok.com/@nextdrive_arg" target="_blank" rel="noreferrer" className="hover:text-mist">
+                  TikTok
+                </a>
+              </li>
+              <li>
+                <a href="mailto:nextdrivearg@gmail.com" className="hover:text-mist">
+                  nextdrivearg@gmail.com
                 </a>
               </li>
             </ul>

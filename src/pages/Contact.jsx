@@ -22,18 +22,23 @@ export default function Contact() {
           <div className="space-y-8">
             <ContactRow
               label="WhatsApp"
-              value="+54 9 11 0000-0000"
-              href="https://wa.me/5491100000000"
+              value="+54 9 11 6402-7497"
+              href="https://wa.me/5491164027497"
             />
             <ContactRow
               label="Instagram"
-              value="@nextdrive"
-              href="https://instagram.com/nextdrive"
+              value="@nextdrive_arg"
+              href="https://instagram.com/nextdrive_arg"
+            />
+            <ContactRow
+              label="TikTok"
+              value="@nextdrive_arg"
+              href="https://tiktok.com/@nextdrive_arg"
             />
             <ContactRow
               label="Email"
-              value="hola@nextdrive.com.ar"
-              href="mailto:hola@nextdrive.com.ar"
+              value="nextdrivearg@gmail.com"
+              href="mailto:nextdrivearg@gmail.com"
             />
           </div>
 
