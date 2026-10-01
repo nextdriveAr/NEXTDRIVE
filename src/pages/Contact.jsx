@@ -3,10 +3,29 @@ import { useState } from "react";
 export default function Contact() {
   const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
   const [enviado, setEnviado] = useState(false);
+  const [enviando, setEnviando] = useState(false);
+  const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setEnviado(true);
+    setEnviando(true);
+    setError(false);
+    try {
+      const res = await fetch("https://formspree.io/f/xppwenrp", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setEnviado(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setEnviando(false);
+    }
   };
 
   return (
@@ -83,11 +102,17 @@ export default function Contact() {
                     className="w-full mt-2 bg-transparent border border-black/15 rounded-xl px-4 py-3 text-sm focus:border-ink outline-none"
                   />
                 </div>
+                {error && (
+                  <p className="text-sm text-red-600">
+                    No pudimos enviar el mensaje. Probá de nuevo o escribinos por WhatsApp.
+                  </p>
+                )}
                 <button
                   type="submit"
-                  className="inline-flex items-center bg-moss text-paper px-7 py-3.5 rounded-full text-sm font-medium hover:bg-mossLight transition-colors"
+                  disabled={enviando}
+                  className="inline-flex items-center bg-moss text-paper px-7 py-3.5 rounded-full text-sm font-medium hover:bg-mossLight transition-colors disabled:opacity-60"
                 >
-                  Enviar mensaje
+                  {enviando ? "Enviando..." : "Enviar mensaje"}
                 </button>
               </form>
             )}
