@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "./Logo";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="container-content py-16">
         <div className="grid md:grid-cols-4 gap-12">
           <div className="md:col-span-2">
-            <p className="font-display text-2xl font-semibold">Next Drive</p>
+            <Logo variant="light" />
             <p className="mt-4 text-sm text-mist max-w-xs leading-relaxed">
               Compramos, vendemos y curamos autos usados con un estándar que la industria
               todavía no tiene.

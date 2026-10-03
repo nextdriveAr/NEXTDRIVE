@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import Logo from "./Logo";
 
 const links = [
   { to: "/vehiculos", label: "Vehículos" },
@@ -14,8 +15,8 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-50 bg-paper/90 backdrop-blur border-b border-black/[0.06]">
       <div className="container-content flex items-center justify-between h-20">
-        <Link to="/" className="font-display text-xl font-semibold tracking-tight">
-          Next Drive
+        <Link to="/">
+          <Logo variant="dark" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">

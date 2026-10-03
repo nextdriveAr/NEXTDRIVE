@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CarImage from "../components/CarImage";
+import Testimonials from "../components/Testimonials";
 import { vehicles } from "../data/vehicles";
 
 const pasos = [
@@ -41,7 +42,7 @@ export default function Home() {
       {/* Hero */}
       <section className="relative bg-ink text-paper overflow-hidden">
         <div className="container-content relative z-10 pt-24 pb-28 md:pt-36 md:pb-40">
-          <p className="text-mist text-sm mb-6">Compra y venta de autos usados en Buenos Aires</p>
+          <p className="text-mist text-sm mb-6 tracking-wide uppercase">Tu próximo auto, nuestra prioridad</p>
           <h1 className="font-display text-[13vw] leading-[0.95] md:text-7xl md:leading-[0.95] font-semibold max-w-3xl">
             Autos usados que merecen confianza.
           </h1>
@@ -136,6 +137,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Testimonials />
 
       {/* CTA final */}
       <section className="py-24 md:py-32 bg-ink text-paper">
